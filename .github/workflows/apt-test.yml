@@ -1,0 +1,13 @@
+name: APT tests
+on: [push]
+jobs:
+  test-apt:
+    runs-on: ubuntu-latest
+    steps:
+      - name: List files in /etc/apt/
+      - run: ls -la /etc/apt/
+      - name: List files in /etc/apt/sources.list.d/
+      - run: ls -la /etc/apt/sources.list.d/
+      - name: Print contents of files in /etc/apt/sources.list.d/
+      - run: grep ^ /etc/apt/sources.list.d/*
+
