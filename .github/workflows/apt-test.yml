@@ -11,7 +11,7 @@ jobs:
       - name: Print contents of /etc/apt/sources.list
         run: cat /etc/apt/sources.list
       - name: Add deb-src
-        run: sudo sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources
+        run: sudo sed -i 's/^Types: deb\$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources
       - name: Print updated contents of /etc/apt/sources.list
         run: cat /etc/apt/sources.list
 
