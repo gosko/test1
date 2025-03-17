@@ -1,4 +1,5 @@
 name: APT tests
+run-name: APT tests
 on: [push]
 jobs:
   test-apt:
