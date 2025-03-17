@@ -8,6 +8,8 @@ jobs:
         run: ls -la /etc/apt/
       - name: List files in /etc/apt/sources.list.d/
         run: ls -la /etc/apt/sources.list.d/
+      - name: Print contents of /etc/apt/sources.list
+        run: cat /etc/apt/sources.list
       - name: Print contents of files in /etc/apt/sources.list.d/
         run: grep ^ /etc/apt/sources.list.d/*
 
